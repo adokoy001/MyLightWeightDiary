@@ -1,3 +1,4 @@
 author:   'Toshiaki Yokoda'
 title:    "軽量日記"
 site_url: 'http://www.yokoda.okinawa/'
+publish_dir: '/var/www/html/lwd/'
