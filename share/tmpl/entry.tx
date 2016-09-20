@@ -6,7 +6,6 @@
 
 : around content -> {
 <nav>
-<a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">tweet</a>
   <ul class="paginate">
   : if $entry.prev() {
     <li class="prev">prev: <a href="<: $entry.prev.site_path | uri_for :>"><: $entry.prev.title :></a>

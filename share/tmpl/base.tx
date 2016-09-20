@@ -18,6 +18,7 @@
   </section>
   <footer>
     <p>author: <: $blog.author :></p>
+    <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
