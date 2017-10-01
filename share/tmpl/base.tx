@@ -31,11 +31,15 @@
     <h1><a href="<: '/' | uri_for :>"><: $blog.title :></a></h1>
   </header>
   <section>
-  : block content -> { }
+    <div class="container">
+      : block content -> { }
+    </div>
   </section>
   <footer>
-    <p>author: <: $blog.author :></p>
-    <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
+    <section>
+      <p>author: <: $blog.author :></p>
+      <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
+    </section>
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
