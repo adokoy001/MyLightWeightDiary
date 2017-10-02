@@ -27,7 +27,7 @@
 
 </head>
 <body>
-  <header>
+  <header class="container">
     <h1><a href="<: '/' | uri_for :>"><: $blog.title :></a></h1>
   </header>
   <section>
@@ -35,7 +35,7 @@
       : block content -> { }
     </div>
   </section>
-  <footer>
+  <footer class="container">
     <section>
       <p>author: <: $blog.author :></p>
       <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
