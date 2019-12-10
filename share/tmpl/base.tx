@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <link rel="alternate" type="application/atom+xml" title="Atom" href="<: '/atom.xml' | uri_for :>">
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
-  <title>
-    <: block title -> { :><: $blog.title :><: } :>
-  </title>
-  <!-- Global Site Tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107114374-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="<: '/atom.xml' | uri_for :>">
     
-    gtag('config', 'UA-107114374-1');
-  </script>
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-2749195493474837",
-    enable_page_level_ads: true
-    });
-  </script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+    <title>
+      <: block title -> { :><: $blog.title :><: } :>
+    </title>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107114374-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+      gtag('config', 'UA-107114374-1');
+    </script>
+    <script data-ad-client="ca-pub-2749195493474837" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+  </head>
+  <body>
+    <style>
+      body {
+      background-position: center center;
+      background-image: url(/images/lwd_bg.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-attachment: fixed;
+      background-color: rgba(255,255,255,0.9);
+      background-blend-mode: lighten;
+      }
+    </style>
 
-</head>
-<body>
-  <header class="container">
-    <h1><a href="<: '/' | uri_for :>"><: $blog.title :></a></h1>
-  </header>
-  <section>
-    <div class="container">
-      : block content -> { }
+    <style>
+      .container-fluid {
+      padding-right: 15px;
+      padding-left: 15px;
+      }
+      h1 {font-size: 2.00em;}
+      h2 {font-size: 1.50em;}
+    </style>
+    <div class="container-fluid">
+      <header class="container">
+	<h1><a href="<: '/' | uri_for :>"><: $blog.title :></a></h1>
+      </header>
+      <section>
+	<div class="container">
+	  : block content -> { }
+	</div>
+      </section>
+      <footer class="container">
+	<section>
+	  <p>author: <: $blog.author :></p>
+	  <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
+	</section>
+      </footer>
+      
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+      <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+      <script>$(function(){$('pre > code').addClass('prettyprint');});</script>
     </div>
-  </section>
-  <footer class="container">
-    <section>
-      <p>author: <: $blog.author :></p>
-      <a href="javascript: var f='http://twitter.com/?status='+encodeURIComponent(document.title+' '+location.href); if(!window.open(f,'surfing'))location.href=f; void(0);">Tweet</a>
-    </section>
-  </footer>
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
-  <script src="//google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
-  <script>$(function(){$('pre > code').addClass('prettyprint');});</script>
-</body>
+  </body>
 </html>
