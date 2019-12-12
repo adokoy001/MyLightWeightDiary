@@ -39,8 +39,9 @@
       padding-right: 15px;
       padding-left: 15px;
       }
-      h1 {font-size: 2.00em;}
-      h2 {font-size: 1.50em;}
+      h1 {font-size: 2.30em;}
+      h2 {font-size: 1.90em;}
+      h3 {font-size: 1.50em;}
     </style>
     <div class="container-fluid">
       <header class="container">
